@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/types"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TypesActivity" >
+
+    <TextView
+        android:id="@+id/tvSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="19dp"
+        android:text="Select a Type"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/rgTypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvSelect"
+        android:layout_below="@+id/tvSelect"
+        android:layout_marginTop="34dp" >
+
+        <RadioButton
+            android:id="@+id/debitCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Debit Card" />
+
+        <RadioButton
+            android:id="@+id/netBankin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Net Banking" />
+
+        <RadioButton
+            android:id="@+id/eId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email id's" />
+        
+         <RadioButton
+            android:id="@+id/expenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Expenses" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bExportDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvSelect"
+        android:layout_alignParentRight="true"
+        android:text="Export" />
+
+    <Button
+        android:id="@+id/bImportBD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bExportDB"
+        android:text="Import" />
+
+</RelativeLayout>

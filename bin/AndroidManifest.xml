@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.choxx.personaldata"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TypesActivity"
+            android:label="@string/title_activity_types" >
+        </activity>
+        <activity
+            android:name=".DebitCard"
+            android:label="@string/title_activity_debit_card" >
+        </activity>
+        <activity
+            android:name=".NetBanking"
+            android:label="@string/title_activity_net_banking" >
+        </activity>
+        <activity
+            android:name=".EmailId"
+            android:label="@string/title_activity_email_id" >
+        </activity>
+        <activity
+            android:name=".AddDC"
+            android:label="@string/title_activity_add_dc" >
+        </activity>
+        <activity
+            android:name=".AddNB"
+            android:label="@string/title_activity_add_nb" >
+        </activity>
+        <activity
+            android:name=".Registration"
+            android:label="@string/title_activity_registration" >
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".ExpenseActivity"
+            android:label="@string/title_activity_expense" >
+        </activity>
+        <activity
+            android:name=".DisplayActivity"
+            android:label="@string/title_activity_display" >
+        </activity>
+        <activity
+            android:name=".ViewDebitCard"
+            android:label="@string/title_activity_view_debit_card" >
+        </activity>
+    </application>
+
+</manifest>
